@@ -6,11 +6,13 @@
   perspective: 5000px;
   outline: 2px solid red;
 }
+
 .title-1 {
   font-size: 50px;
   color: brown;
   text-align: center;
 }
+
 .container__box {
   max-width: 1800px;
   min-height: 1000px;
@@ -23,66 +25,102 @@
   transform: rotate3d(-2, -1, 1, -82deg);
 }
 
-.container__box_line {
-  width: 6px;
-  height: 150px;
-  background-color: brown;
-  transform: rotate3d(1, -2, 2, 57deg);
+.box-moscow {
+  max-width: 300px;
   position: relative;
-  left: 322px;
-  top: 742px;
+  top: -414px;
+  left: 638px;
 }
 
-.container__box_table {
-  width: 200px;
-  height: 168px;
-  transform: rotate3d(4, -6, 5, 60deg);
+.box-pasad {
+  max-width: 300px;
   position: relative;
-  left: 254px;
-  top: 437px;
-  background-image: url(../img/img-moscow.jpg);
-  background-size: 100% 100%;
-  border: 5px solid brown;
-  border-radius: 10%;
+  top: -684px;
+  left: 660px;
 }
-.container__box_table:hover{
+
+.box-moscow:hover,
+.box-pasad:hover {
   cursor: pointer;
-  animation:container__box_table 2.5s infinite ;
+  animation: box-moscow 3s 3;
 }
-@keyframes container__box_table{
+
+@keyframes box-moscow {
   0% {}
+
   50% {
-    scale: 2.8;
-    
+    scale: 1.3;
   }
+
   100% {}
 }
-.container__box_desc {
-  width: 228px;
-  height: 86px;
-  transform: rotate3d(4, -6, 5, 63deg);
+
+.container__box_line-moscow {
+  width: 3px;
+  height: 40px;
+  background-color: brown;
   position: relative;
-  left: 186px;
-  top: 567px;
+  left: 95px;
+}
+
+.container__box_table-moscow {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  background-image: url(../img/img-moscow.jpg);
+  background-size: 100% 100%;
+  border: 2px solid brown;
+  border-radius: 10%;
+
+}
+
+.container__box_desc-moscow {
+  width: 116px;
+  height: 47px;
   background-color: rgb(0, 255, 136);
   border-radius: 10%;
   padding: 5px;
-  
+  position: relative;
+  left: 90px;
 }
-.container__box_desc:hover{
-  cursor: pointer;
-  animation:container__box_desc .5s infinite ;
+
+.container__box_text-moscow {
+  font-size: 25px;
+  color: brown;
+  margin: 0;
 }
-@keyframes container__box_desc {
-  0% {}
-  50% {
-    scale: 1.8;
-    color: red;
-  }
-  100% {}
+
+.container__box_table-pasad {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  background-image: url(../img/img-pasad.PNG);
+  background-size: 100% 100%;
+  border: 2px solid brown;
+  border-radius: 10%;
+
 }
-.container__box_text {
-  font-size: 68px;
+
+.container__box_line-pasad {
+  width: 3px;
+  height: 40px;
+  background-color: brown;
+  position: relative;
+  left: 95px;
+}
+
+.container__box_desc-pasad {
+  width: 116px;
+  height: 47px;
+  background-color: rgb(0, 255, 136);
+  border-radius: 10%;
+  padding: 5px;
+  position: relative;
+  left: 90px;
+}
+
+.container__box_text-pasad {
+  font-size: 25px;
   color: brown;
   margin: 0;
 }
