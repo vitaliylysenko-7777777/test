@@ -6,7 +6,11 @@
   perspective: 5000px;
   outline: 2px solid red;
 }
-
+.title-1 {
+  font-size: 50px;
+  color: brown;
+  text-align: center;
+}
 .container__box {
   max-width: 1800px;
   min-height: 1000px;
