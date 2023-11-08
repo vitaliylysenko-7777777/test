@@ -28,8 +28,8 @@
 .box-moscow {
   max-width: 300px;
   position: relative;
-  top: -414px;
-  left: 638px;
+  top: -434px;
+  left: 603px;
 }
 
 .box-pasad {
@@ -39,10 +39,18 @@
   left: 660px;
 }
 
+.box-pereslavl {
+  max-width: 300px;
+  position: relative;
+  top: -927px;
+  left: 706px;
+}
+
 .box-moscow:hover,
-.box-pasad:hover {
+.box-pasad:hover,
+.box-pereslavl:hover {
   cursor: pointer;
-  animation: box-moscow 3s 3;
+  animation: box-moscow 1s 3;
 }
 
 @keyframes box-moscow {
@@ -55,72 +63,50 @@
   100% {}
 }
 
-.container__box_line-moscow {
+.container__box_line {
   width: 3px;
   height: 40px;
   background-color: brown;
   position: relative;
   left: 95px;
+}
+
+.container__box_table {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  border: 2px solid brown;
+  border-radius: 10%;
+  background-size: 100% 100%;
+}
+
+.container__box_desc {
+  width: 130px;
+  min-height: 30px;
+  background-color: rgb(0, 255, 136);
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding: 5px;
+  position: relative;
+  left: 95px;
+  text-align: center;
+}
+
+.container__box_text {
+  font-size: 20px;
+  color: brown;
+  margin: 0;
 }
 
 .container__box_table-moscow {
-  position: relative;
-  width: 100px;
-  height: 50px;
   background-image: url(../img/img-moscow.jpg);
-  background-size: 100% 100%;
-  border: 2px solid brown;
-  border-radius: 10%;
-
-}
-
-.container__box_desc-moscow {
-  width: 116px;
-  height: 47px;
-  background-color: rgb(0, 255, 136);
-  border-radius: 10%;
-  padding: 5px;
-  position: relative;
-  left: 90px;
-}
-
-.container__box_text-moscow {
-  font-size: 25px;
-  color: brown;
-  margin: 0;
 }
 
 .container__box_table-pasad {
-  position: relative;
-  width: 100px;
-  height: 50px;
   background-image: url(../img/img-pasad.PNG);
-  background-size: 100% 100%;
-  border: 2px solid brown;
-  border-radius: 10%;
-
 }
 
-.container__box_line-pasad {
-  width: 3px;
-  height: 40px;
-  background-color: brown;
-  position: relative;
-  left: 95px;
-}
-
-.container__box_desc-pasad {
-  width: 116px;
-  height: 47px;
-  background-color: rgb(0, 255, 136);
-  border-radius: 10%;
-  padding: 5px;
-  position: relative;
-  left: 90px;
-}
-
-.container__box_text-pasad {
-  font-size: 25px;
-  color: brown;
-  margin: 0;
+.container__box_table-pereslavl {
+  background-image: url(../img/img-pereslavl.PNG);
 }
